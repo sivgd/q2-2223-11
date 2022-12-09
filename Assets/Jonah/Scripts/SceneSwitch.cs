@@ -7,6 +7,7 @@ public class SceneSwitch : MonoBehaviour
 {
     private int Start = 1;
     private int Credit = 2;
+    private int Options = 3;
     public void OnButtonPress()
     {
         SceneManager.LoadScene(Start);
@@ -15,5 +16,15 @@ public class SceneSwitch : MonoBehaviour
     public void OnButtonPress2()
     {
         SceneManager.LoadScene(Credit);
+    }
+
+    public void OnButtonPress3()
+    {
+        SceneManager.LoadScene(Options);
+    }
+    public void doExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
     }
 }
