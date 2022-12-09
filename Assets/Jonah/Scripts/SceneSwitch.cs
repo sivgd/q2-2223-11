@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    public int n;
+    private int Start = 1;
+    private int Credit = 2;
     public void OnButtonPress()
     {
-        SceneManager.LoadScene(n);
+        SceneManager.LoadScene(Start);
+    }
+
+    public void OnButtonPress2()
+    {
+        SceneManager.LoadScene(Credit);
     }
 }
