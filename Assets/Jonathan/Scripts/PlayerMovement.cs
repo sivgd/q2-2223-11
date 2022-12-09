@@ -78,7 +78,8 @@ public class PlayerMovement : MonoBehaviour
     {
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
-        jumping = Input.GetButton("Jump");
+        //jumping = Input.GetButton("Jump");
+        jumping = Input.GetKey(KeyCode.Space);
         crouching = Input.GetKey(KeyCode.LeftControl);
 
         //Crouching
@@ -144,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
         // Movement in air
         if (!grounded)
         {
+            Debug.Log("Ground");
             multiplier = 0.5f;
             multiplierV = 0.5f;
         }
