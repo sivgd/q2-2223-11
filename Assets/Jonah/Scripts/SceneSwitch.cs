@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
+    private int Home = 0;
     private int Start = 1;
     private int Credit = 2;
     private int Options = 3;
@@ -26,5 +27,9 @@ public class SceneSwitch : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Quit");
+    }
+    public void OnButtonPress4()
+    {
+        SceneManager.LoadScene(Home);
     }
 }
