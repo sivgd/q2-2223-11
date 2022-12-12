@@ -145,7 +145,6 @@ public class PlayerMovement : MonoBehaviour
         // Movement in air
         if (!grounded)
         {
-            Debug.Log("Ground");
             multiplier = 0.5f;
             multiplierV = 0.5f;
         }
