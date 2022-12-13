@@ -9,6 +9,7 @@ public class GrapplingGun : MonoBehaviour
     public Transform gunTip, camera, player;
     private float maxDistance = 100f;
     private SpringJoint joint;
+    public float grappleDistance = 0.8f;
 
     void Awake()
     {
@@ -49,7 +50,7 @@ public class GrapplingGun : MonoBehaviour
             float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
 
             //The distance grapple will try to keep from grapple point. 
-            joint.maxDistance = distanceFromPoint * 0.8f;
+            joint.maxDistance = distanceFromPoint * grappleDistance;
             joint.minDistance = distanceFromPoint * 0.25f;
 
             //Adjust these values to fit your game.
