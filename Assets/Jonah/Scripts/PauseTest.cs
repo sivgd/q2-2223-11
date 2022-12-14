@@ -9,7 +9,7 @@ public class PauseTest : MonoBehaviour
     public SceneSwitch SS;
 
 
-    // Update is called once per frame
+    // Update is calaled once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
