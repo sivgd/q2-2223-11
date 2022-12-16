@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GrapplingGun : MonoBehaviour
 {
-
+    private Animator a;
     private LineRenderer lr;
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
@@ -14,6 +14,7 @@ public class GrapplingGun : MonoBehaviour
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
+        a = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,10 +22,12 @@ public class GrapplingGun : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             StartGrapple();
+            a.SetBool("Squeeze", true);
         }
         else if (Input.GetMouseButtonUp(0))
         {
             StopGrapple();
+            a.SetBool("Squeeze", false);
         }
     }
 
