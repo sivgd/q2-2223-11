@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Jonah/Jonah.unity
     guid: 6a9c0e62058f11b42bda0760003cc9cc
   - enabled: 1
-    path: Assets/Jonathan/SampleScene.unity
-    guid: 0b89bd18bf778a24c843eafe0afaab9c
+    path: Assets/Jonathan/Jonathan.unity
+    guid: e7c0de59f88fbac428f20a7fd8db636c
   - enabled: 1
     path: Assets/Jonah/Credits.unity
     guid: e467acfb18f0258409b3fde267a35756
