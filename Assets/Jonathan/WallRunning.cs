@@ -35,6 +35,7 @@ public class WallRunning : MonoBehaviour
     public Transform orientation;
     private PlayerMovement pm;
     private Rigidbody rb;
+    public Camera cam;
 
     private void Start()
     {
