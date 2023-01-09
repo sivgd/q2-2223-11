@@ -11,6 +11,6 @@ public class Slides : MonoBehaviour
 
     public void VolumeSlider(float volume)
     {
-
+        
     }
 }

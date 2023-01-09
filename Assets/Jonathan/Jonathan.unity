@@ -421,6 +421,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62923378}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &110971411 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 424506719425991068, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+  m_PrefabInstance: {fileID: 7213861351707792158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120950019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2448,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiderman
       objectReference: {fileID: 0}
+    - target: {fileID: 2001681999926297018, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7213861351004906703, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 110971411}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
 --- !u!1001 &7219425738509401907
