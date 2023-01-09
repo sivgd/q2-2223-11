@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
     //Wallrunning
     public bool wallrunning;
 
+    public PlayerMovementAdvanced pmAdv;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -74,9 +76,7 @@ public class PlayerMovement : MonoBehaviour
         Look();
     }
 
-    /// <summary>
-    /// Find user input. Should put this in its own class but im lazy
-    /// </summary>
+
     private void MyInput()
     {
         x = Input.GetAxisRaw("Horizontal");
@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftControl))
             StopCrouch();
     }
-
     private void StartCrouch()
     {
         transform.localScale = crouchScale;
@@ -113,6 +112,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
+
+        if(crouching == true)
+        {
+            pmAdv.MovePlayer();
+        }
+
         //Extra gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 10);
 
@@ -196,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 rot = playerCam.transform.localRotation.eulerAngles;
         desiredX = rot.y + mouseX;
 
-        //Rotate, and also make sure we dont over- or under-rotate.
+        //Rotate
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
@@ -226,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(moveSpeed * orientation.transform.forward * Time.deltaTime * -mag.y * counterMovement);
         }
 
-        //Limit diagonal running. This will also cause a full stop if sliding fast and un-crouching, so not optimal.
+        //Limit diagonal running. 
         if (Mathf.Sqrt((Mathf.Pow(rb.velocity.x, 2) + Mathf.Pow(rb.velocity.z, 2))) > maxSpeed)
         {
             float fallspeed = rb.velocity.y;
@@ -235,11 +240,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Find the velocity relative to where the player is looking
-    /// Useful for vectors calculations regarding movement and limiting movement
-    /// </summary>
-    /// <returns></returns>
+    
     public Vector2 FindVelRelativeToLook()
     {
         float lookAngle = orientation.transform.eulerAngles.y;
@@ -263,9 +264,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool cancellingGrounded;
 
-    /// <summary>
+    
     /// Handle ground detection
-    /// </summary>
+    
     private void OnCollisionStay(Collision other)
     {
         //Make sure we are only checking for walkable layers
