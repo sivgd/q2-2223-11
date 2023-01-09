@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         playerScale = transform.localScale;
         Cursor.visible = false;
     }
