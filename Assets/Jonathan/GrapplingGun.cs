@@ -37,9 +37,7 @@ public class GrapplingGun : MonoBehaviour
         DrawRope();
     }
 
-    /// <summary>
-    /// Call whenever we want to start a grapple
-    /// </summary>
+
     void StartGrapple()
     {
         RaycastHit hit;
@@ -56,7 +54,7 @@ public class GrapplingGun : MonoBehaviour
             joint.maxDistance = distanceFromPoint * grappleDistance;
             joint.minDistance = distanceFromPoint * 0.25f;
 
-            //Adjust these values to fit your game.
+           
             joint.spring = 4.5f;
             joint.damper = 7f;
             joint.massScale = 4.5f;
@@ -67,9 +65,7 @@ public class GrapplingGun : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// Call whenever we want to stop a grapple
-    /// </summary>
+
     void StopGrapple()
     {
         lr.positionCount = 0;

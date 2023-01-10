@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         Time.timeScale = 1f;
         playerScale = transform.localScale;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 
