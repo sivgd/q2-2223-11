@@ -7,7 +7,8 @@ public class PauseTest : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public SceneSwitch SS;
-    
+    public int pause = 0;
+    public GameObject Dialog;
 
     // Update is calaled once per frame
     void Update()
@@ -23,6 +24,7 @@ public class PauseTest : MonoBehaviour
                 Pausing();
             }
         }
+
     }
     public void Resume()
     {
@@ -31,6 +33,8 @@ public class PauseTest : MonoBehaviour
         GameIsPaused = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        pause = 0;
+        Dialog.SetActive(true);
     }
 
     void Pausing()
@@ -39,6 +43,8 @@ public class PauseTest : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;
+        pause = 1;
+        Dialog.SetActive(false);
     }
 
     public void ToMenu()
@@ -49,7 +55,6 @@ public class PauseTest : MonoBehaviour
 
     IEnumerator resumer()
     {
-        yield return new WaitForSeconds(0.5f);
         pauseMenuUI.SetActive(false);
 
     }

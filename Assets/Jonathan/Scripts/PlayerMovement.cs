@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform playerCam;
     public Transform orientation;
 
+    public PauseTest pausetest;
+
     //Other
     private Rigidbody rb;
 
@@ -74,7 +76,11 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         MyInput();
-        Look();
+        if (pausetest.pause == 0)
+        {
+            Look(Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier);
+        }
+        
     }
 
 
@@ -193,10 +199,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private float desiredX;
-    public void Look()
+    public void Look(float mouseX, float mouseY)
     {
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier;
 
         //Find current look rotation
         Vector3 rot = playerCam.transform.localRotation.eulerAngles;
