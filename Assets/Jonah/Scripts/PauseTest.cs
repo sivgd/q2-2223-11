@@ -28,13 +28,13 @@ public class PauseTest : MonoBehaviour
     }
     public void Resume()
     {
-        StartCoroutine(resumer());
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pause = 0;
         Dialog.SetActive(true);
+        pauseMenuUI.SetActive(false);
     }
 
     void Pausing()
@@ -52,12 +52,5 @@ public class PauseTest : MonoBehaviour
         Time.timeScale = 1f;
         SS.OnButtonPress4();
     }
-
-    IEnumerator resumer()
-    {
-        pauseMenuUI.SetActive(false);
-
-    }
-
 
 }

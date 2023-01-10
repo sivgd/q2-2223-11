@@ -325,6 +325,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818533716 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8791298764471143154, guid: 166f535c939fd274ab96c7274b1cf260, type: 3}
+  m_PrefabInstance: {fileID: 8791298764391072557}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fca06ff5bf60f4595a327701f5919f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &48382893242966173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 1539294173495252761}
   orientation: {fileID: 1539294173006514909}
+  pausetest: {fileID: 1818533716}
   moveSpeed: 5000
   maxSpeed: 20
   grounded: 0
@@ -5593,6 +5605,10 @@ PrefabInstance:
       propertyPath: SS
       value: 
       objectReference: {fileID: 669541672}
+    - target: {fileID: 8791298764471143154, guid: 166f535c939fd274ab96c7274b1cf260, type: 3}
+      propertyPath: camTransform
+      value: 
+      objectReference: {fileID: 1539294173495252761}
     - target: {fileID: 8791298764471143155, guid: 166f535c939fd274ab96c7274b1cf260, type: 3}
       propertyPath: m_Pivot.x
       value: 0
