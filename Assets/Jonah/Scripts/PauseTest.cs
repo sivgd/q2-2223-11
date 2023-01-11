@@ -42,6 +42,7 @@ public class PauseTest : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         pause = 1;
         Dialog.SetActive(false);
