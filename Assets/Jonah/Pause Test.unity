@@ -5606,6 +5606,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 669541672}
     - target: {fileID: 8791298764471143154, guid: 166f535c939fd274ab96c7274b1cf260, type: 3}
+      propertyPath: Dialog
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791298764471143154, guid: 166f535c939fd274ab96c7274b1cf260, type: 3}
       propertyPath: camTransform
       value: 
       objectReference: {fileID: 1539294173495252761}
