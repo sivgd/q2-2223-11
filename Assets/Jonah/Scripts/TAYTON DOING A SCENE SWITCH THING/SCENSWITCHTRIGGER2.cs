@@ -12,6 +12,6 @@ public class SCENSWITCHTRIGGER2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<SceneSwitch>().OnButtonPress4();
+        FindObjectOfType<SceneSwitch>().OnButtonPress5();
     }
 }

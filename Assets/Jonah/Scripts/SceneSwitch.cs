@@ -9,6 +9,7 @@ public class SceneSwitch : MonoBehaviour
     private int Start = 1;
     private int Credit = 2;
     private int Options = 3;
+    private int LevelOne = 4;
     public void OnButtonPress()
     {
         SceneManager.LoadScene(Start);
@@ -32,8 +33,8 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene(Home);
     }
-    //public void OnButtonPress5()
-    //{
-    //    SceneManager.LoadScene(Level 1);
-    //}
+    public void OnButtonPress5()
+    {
+        SceneManager.LoadScene(LevelOne);
+    }
 }
