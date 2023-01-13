@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     //Rotation and look
     private float xRotation;
-    private float sensitivity = 50f;
     private float sensMultiplier = 1f;
 
     //Movement
@@ -78,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         MyInput();
         if (pausetest.pause == 0)
         {
-            Look(Input.GetAxis("Mouse X") * sensitivity * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * sensitivity * Time.fixedDeltaTime * sensMultiplier);
+            Look(Input.GetAxis("Mouse X") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier);
         }
         
     }
