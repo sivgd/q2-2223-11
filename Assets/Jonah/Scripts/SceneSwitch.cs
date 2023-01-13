@@ -37,4 +37,13 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene(LevelOne);
     }
+    public void OnButtonPress6()
+    {
+        SceneManager.LoadScene(5);
+    }
+    public void OnButtonPress7()
+    {
+        SceneManager.LoadScene(6);
+    }
+
 }
