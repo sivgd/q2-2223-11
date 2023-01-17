@@ -16,9 +16,17 @@ public class Animations : MonoBehaviour
         {
             GameManager.internalscreaming = 1;
         }
+        if (Collision.gameObject.tag == "ramp" && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            GameManager.onramp = 1;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
             GameManager.internalscreaming = 0;
+        GameManager.onramp = 0;
     }
+
+
+    //GAMER MOMENT THROBBY LIVES
 }

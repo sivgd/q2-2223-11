@@ -23,6 +23,14 @@ public class Pain : MonoBehaviour
         {
             a.SetBool("Wall", false);
         }
-        Debug.Log(GameManager.internalscreaming);
+        if (GameManager.onramp == 1)
+        {
+            a.SetBool("Slide", true);
+        }
+        if (GameManager.onramp == 0)
+        {
+            a.SetBool("Slide", false);
+        }
+        Debug.Log(GameManager.onramp);
     }
 }
