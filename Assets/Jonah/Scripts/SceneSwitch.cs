@@ -45,5 +45,8 @@ public class SceneSwitch : MonoBehaviour
     {
         SceneManager.LoadScene(6);
     }
-
+    public void OnButtonPress8()
+    {
+        SceneManager.LoadScene(7);
+    }
 }
