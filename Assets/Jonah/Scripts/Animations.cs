@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class Animations : MonoBehaviour
 {
-    private Animator a;
 
 
     public void Start()
     {
-        a = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider Collision)
     {
-       if(Collision.gameObject.tag == ("wall")) 
+       if(Collision.gameObject.tag == "wall") 
         {
-            Debug.Log("test");
-            a.SetBool("Wall", true);
+            GameManager.internalscreaming = 1;
         }
-        else
-        {
-            a.SetBool("Wall", false);
-        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+            GameManager.internalscreaming = 0;
     }
 }
