@@ -169,7 +169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 142986810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -180,16 +180,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_Texture: {fileID: 2800000, guid: 80d0af6b4c84c4c489a283b212a0e2a9, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!222 &142986813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -429,7 +426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fb5e59e0059a29646a699ef1f7354858, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6262d99037b981748aa92819d57572cd, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -747,7 +744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a3c3720deef4e0e41852d453a702afec, type: 3}
+  m_Texture: {fileID: 2800000, guid: 170add665b933fa4ab72839fa752b979, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -876,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7465616df5858394592964648e3b7438, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4be05a34606287c46a471f929502f515, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1178,7 +1175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c16e00d63190caf438db54599585d69d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 834770206ea2e3f4eba2930ba5a683ce, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
