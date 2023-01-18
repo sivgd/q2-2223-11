@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jonah/Options3.unity
     guid: 478c0f5109a42e747bbd57b25457e234
+  - enabled: 1
+    path: Assets/Jonah/Options4.unity
+    guid: 5303391b53527974f891480b483e2820
+  - enabled: 1
+    path: Assets/Tayton/LevelTwo.unity
+    guid: 8260b5212ed6f3942ae08a8f3093310c
   m_configObjects: {}
