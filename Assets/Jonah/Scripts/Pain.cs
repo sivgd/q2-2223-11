@@ -9,6 +9,7 @@ public class Pain : MonoBehaviour
     void Start()
     {
         GameManager.internalscreaming = 0;
+        GameManager.onramp = 0;
         a = GetComponent<Animator>();
     }
 
@@ -31,6 +32,5 @@ public class Pain : MonoBehaviour
         {
             a.SetBool("Slide", false);
         }
-        Debug.Log(GameManager.onramp);
     }
 }

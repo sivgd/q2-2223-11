@@ -4,27 +4,39 @@ using UnityEngine;
 
 public class Animations : MonoBehaviour
 {
-
+    public int toramp = 0;
 
     public void Start()
     {
+
+    }
+    public void Update()
+    {
+        if(toramp == 1 && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            GameManager.onramp = 1;
+        }
+        else if(toramp == 0 || Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            GameManager.onramp = 0;
+        }
     }
 
-    private void OnTriggerEnter(Collider Collision)
+    public void OnTriggerEnter(Collider Collision)
     {
        if(Collision.gameObject.tag == "wall") 
         {
             GameManager.internalscreaming = 1;
         }
-        if (Collision.gameObject.tag == "ramp" && Input.GetKeyDown(KeyCode.LeftControl))
+        if ( Collision.gameObject.tag == "ramp")
         {
-            GameManager.onramp = 1;
+            toramp = 1;
         }
     }
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
             GameManager.internalscreaming = 0;
-        GameManager.onramp = 0;
+            toramp = 0;
     }
 
 
