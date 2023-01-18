@@ -10,7 +10,6 @@ public class SceneSwitch : MonoBehaviour
     private int Credit = 2;
     private int Options = 3;
     private int LevelOne = 4;
-    private int
     public void OnButtonPress()
     {
         SceneManager.LoadScene(Start);
