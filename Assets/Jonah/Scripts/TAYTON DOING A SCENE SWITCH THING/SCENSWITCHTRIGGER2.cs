@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SCENSWITCHTRIGGER2 : MonoBehaviour
 {
@@ -12,6 +13,6 @@ public class SCENSWITCHTRIGGER2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<SceneSwitch>().OnButtonPress5();
+        SceneManager.LoadScene(9);
     }
 }

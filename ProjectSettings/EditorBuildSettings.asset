@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tayton/LevelTwo.unity
     guid: 8260b5212ed6f3942ae08a8f3093310c
+  - enabled: 1
+    path: Assets/Jonah/Comic.unity
+    guid: afcdb53c627cd544fb1b53da358b6c7a
   m_configObjects: {}
