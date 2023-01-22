@@ -125,7 +125,7 @@ public class Comic : MonoBehaviour
         }
         if (currentPanel == 9)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(10);
         }
     }
 }

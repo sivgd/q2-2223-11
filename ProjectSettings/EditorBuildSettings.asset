@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jonah/Comic.unity
     guid: afcdb53c627cd544fb1b53da358b6c7a
+  - enabled: 1
+    path: Assets/Tayton/cutscene.unity
+    guid: fe8bacce3c899414c850a5f13abf1f5e
   m_configObjects: {}
