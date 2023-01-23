@@ -187,8 +187,69 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &33195581
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 424506718490875177, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: pausetest
+      value: 
+      objectReference: {fileID: 3651855080898538254}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 692.905
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -601.34924
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553216, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424506720425553217, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
+      propertyPath: m_Name
+      value: Spiderman 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7999a41c31ef03643a24a972ab9e7895, type: 3}
 --- !u!1001 &125799630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -351,7 +412,7 @@ Transform:
   m_LocalScale: {x: 307.25, y: 307.25, z: 307.25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1452420158
 GameObject:
@@ -444,7 +505,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &8901588343629164
 Transform:
@@ -3138,7 +3199,7 @@ RectTransform:
   - {fileID: 3651855081842543708}
   - {fileID: 4914119467365725573}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4395,7 +4456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 694ac6974e18ae141b2c76c547455fb6, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4be05a34606287c46a471f929502f515, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4473,7 +4534,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3651855080898538254}
         m_TargetAssemblyTypeName: PauseTest, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -4524,7 +4585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a3c3720deef4e0e41852d453a702afec, type: 3}
+  m_Texture: {fileID: 2800000, guid: 170add665b933fa4ab72839fa752b979, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4551,7 +4612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fb5e59e0059a29646a699ef1f7354858, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6262d99037b981748aa92819d57572cd, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4629,9 +4690,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 125799631}
         m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
-        m_MethodName: OnButtonPress3
+        m_MethodName: OnButtonPress8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4704,7 +4765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3651855080898538254}
         m_TargetAssemblyTypeName: PauseTest, Assembly-CSharp
         m_MethodName: ToMenu
         m_Mode: 1

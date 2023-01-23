@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SCENSWITCHTRIGGER2 : MonoBehaviour
+public class Open : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        GameManager.Sensitivity = 1;
+        StartCoroutine(waiter());
     }
 
-    private void OnTriggerEnter(Collider other)
+    IEnumerator waiter()
     {
-        SceneManager.LoadScene(10);
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(1);
     }
 }

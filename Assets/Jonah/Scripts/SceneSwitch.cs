@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    private int Home = 0;
-    private int Start = 1;
-    private int Credit = 2;
-    private int Options = 3;
-    private int LevelOne = 4;
+    private int Home = 1;
+    private int Start = 2;
+    private int Credit = 3;
+    private int Options = 4;
+    private int LevelOne = 5;
     public void OnButtonPress()
     {
         SceneManager.LoadScene(Start);
@@ -39,18 +39,18 @@ public class SceneSwitch : MonoBehaviour
     }
     public void OnButtonPress6()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
     public void OnButtonPress7()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
     public void OnButtonPress8()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(8);
     }
     public void OnButtonPress9()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(9);
     }
 }
