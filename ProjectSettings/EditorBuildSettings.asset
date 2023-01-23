@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Jonah/Start.unity
+    guid: b974d8958e6dde64496b66ebbd1050dc
+  - enabled: 1
     path: Assets/Jonah/Jonah.unity
     guid: 6a9c0e62058f11b42bda0760003cc9cc
   - enabled: 1
