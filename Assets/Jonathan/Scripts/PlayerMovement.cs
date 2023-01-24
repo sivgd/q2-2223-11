@@ -120,10 +120,10 @@ public class PlayerMovement : MonoBehaviour
     private void Movement()
     {
 
-        if(crouching == true)
-        {
-            pmAdv.MovePlayer();
-        }
+        //if(crouching == true)
+        //{
+        //    pmAdv.MovePlayer();
+        //}
 
         //Extra gravity
         rb.AddForce(Vector3.down * Time.deltaTime * 10);
