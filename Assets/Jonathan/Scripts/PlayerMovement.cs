@@ -179,9 +179,19 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
 
             //Add jump forces
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rb.AddForce(Vector2.up * jumpForce * 1.5f);
+                rb.AddForce(normalVector * jumpForce * 0.5f);
+                rb.AddForce(Vector2.right * jumpForce * 1.5f);
+            }
+            else 
+            { 
             rb.AddForce(Vector2.up * jumpForce * 1.5f);
             rb.AddForce(normalVector * jumpForce * 0.5f);
 
+            }
+           
             //If jumping while falling, reset y velocity.
             Vector3 vel = rb.velocity;
             if (rb.velocity.y < 0.5f)
