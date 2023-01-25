@@ -80,7 +80,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Look(Input.GetAxis("Mouse X") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier);
         }
-        
+        var vel = rb.velocity;
+        float Wind = vel.magnitude;
+        if(Wind >= 25)
+        {
+            GameManager.wind = 1;
+        }
+        else
+        {
+            GameManager.wind = 0;
+        }
+        Debug.Log(Wind);
     }
 
 
