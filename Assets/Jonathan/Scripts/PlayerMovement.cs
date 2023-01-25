@@ -80,7 +80,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Look(Input.GetAxis("Mouse X") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier);
         }
-        
+        var vel = rb.velocity;
+        float Wind = vel.magnitude;
+        if(Wind >= 25)
+        {
+            GameManager.wind = 1;
+        }
+        else
+        {
+            GameManager.wind = 0;
+        }
+        Debug.Log(Wind);
     }
 
 
@@ -179,9 +189,9 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
 
             //Add jump forces
-            rb.AddForce(Vector2.up * jumpForce * 1.5f);
-            rb.AddForce(normalVector * jumpForce * 0.5f);
-
+                rb.AddForce(Vector2.up * jumpForce * 1.5f);
+                rb.AddForce(normalVector * jumpForce * 0.5f);
+           
             //If jumping while falling, reset y velocity.
             Vector3 vel = rb.velocity;
             if (rb.velocity.y < 0.5f)
