@@ -9,4 +9,6 @@ public class GameManager : MonoBehaviour
     public static int internalscreaming;
 
     public static int onramp;
+
+    public static int wind;
 }
