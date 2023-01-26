@@ -12,14 +12,6 @@ public class Animations : MonoBehaviour
     }
     public void Update()
     {
-        if(toramp == 1 && Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            GameManager.onramp = 1;
-        }
-        else if(toramp == 0 || Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            GameManager.onramp = 0;
-        }
     }
 
     public void OnTriggerEnter(Collider Collision)

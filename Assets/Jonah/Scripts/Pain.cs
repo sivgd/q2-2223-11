@@ -24,11 +24,11 @@ public class Pain : MonoBehaviour
         {
             a.SetBool("Wall", false);
         }
-        if (GameManager.onramp == 1)
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             a.SetBool("Slide", true);
         }
-        if (GameManager.onramp == 0)
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             a.SetBool("Slide", false);
         }
