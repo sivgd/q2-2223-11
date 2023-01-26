@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         }
         var vel = rb.velocity;
         float Wind = vel.magnitude;
-        if(Wind >= 25)
+        if(Wind >= 30)
         {
             GameManager.wind = 1;
         }
