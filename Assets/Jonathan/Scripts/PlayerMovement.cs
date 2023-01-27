@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         MyInput();
-        if (pausetest.pause == 0)
+        if (pausetest.pause == 0 && GameManager.IsInDialog == 0)
         {
             Look(Input.GetAxis("Mouse X") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier, Input.GetAxis("Mouse Y") * GameManager.Sensitivity* 100 * Time.fixedDeltaTime * sensMultiplier);
         }

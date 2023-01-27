@@ -6,6 +6,7 @@ public class PauseTest : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    public GameObject DarkDialog;
     public SceneSwitch SS;
     public int pause = 0;
     public GameObject Dialog;
@@ -13,7 +14,7 @@ public class PauseTest : MonoBehaviour
     // Update is calaled once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameManager.IsInDialog == 0)
         {
             if (GameIsPaused)
             {
@@ -35,10 +36,12 @@ public class PauseTest : MonoBehaviour
         pause = 0;
         Dialog.SetActive(true);
         pauseMenuUI.SetActive(false);
+        DarkDialog.SetActive(false);
     }
 
     void Pausing()
     {
+        DarkDialog.SetActive(true);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
