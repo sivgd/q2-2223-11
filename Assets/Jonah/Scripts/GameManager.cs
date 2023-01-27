@@ -11,4 +11,6 @@ public class GameManager : MonoBehaviour
     public static int onramp;
 
     public static int wind;
+
+    public static int IsInDialog;
 }
