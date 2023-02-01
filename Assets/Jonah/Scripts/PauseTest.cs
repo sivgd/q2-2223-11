@@ -10,6 +10,7 @@ public class PauseTest : MonoBehaviour
     public SceneSwitch SS;
     public int pause = 0;
     public GameObject Dialog;
+    public Dialogfor2 DiaManager;
 
     // Update is calaled once per frame
     void Update()
@@ -34,9 +35,12 @@ public class PauseTest : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         pause = 0;
-        Dialog.SetActive(true);
         pauseMenuUI.SetActive(false);
         DarkDialog.SetActive(false);
+        if (DiaManager.dia == 1)
+        {
+        Dialog.SetActive(true);
+        }
     }
 
     void Pausing()
