@@ -14,6 +14,6 @@ public class Finish : MonoBehaviour
     IEnumerator waiter()
     {
         yield return new WaitForSeconds(18f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(13);
     }
 }
