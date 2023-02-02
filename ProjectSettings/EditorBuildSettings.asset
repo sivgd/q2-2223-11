@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tayton/cutscene.unity
     guid: fe8bacce3c899414c850a5f13abf1f5e
+  - enabled: 1
+    path: Assets/Jonah/Final Cutscene.unity
+    guid: 86620b0199ec80142aa6cf2050e12c60
   m_configObjects: {}
